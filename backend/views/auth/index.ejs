@@ -1,0 +1,14 @@
+<%- include('../includes/head')%>
+<!-- Position relative to Public folder -->
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+    <%- include("../includes/navigation.ejs") %>
+    <% if (isAuthenticated) { %> 
+        <h2> You've successfully logged in !!</h2>
+    <% } else {  %>
+        <h2> You need to log in !!</h2>
+    <% } %>
+</body>
+</html>
