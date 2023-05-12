@@ -1,0 +1,5 @@
+{
+    "env": {
+        "MONGO_URL": "mongodb+srv://ShopOwner:lXLaEMaZYf7LyKyo@cluster0.8dtrmbc.mongodb.net/Hackathon"
+    }
+}

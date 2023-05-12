@@ -1,0 +1,31 @@
+<%- include("../includes/head.ejs") %>
+<!-- Position relative to Public folder -->
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+    <%- include("../includes/navigation.ejs") %>
+    <form class="login-form" action="/login" method="POST">
+        <% if (errorMessage) { %>
+            <div class="user-message user-message--error"> <%= errorMessage %></div>  
+        <% } %>  
+        <div class="form-control">
+            <label for="email">E-mail</label>
+            <input 
+            class= "<%= validationErrors.find(e => e.path === 'email' ) ? 'invalid' : '' %>"
+            type="email" name="email" id="email" value="<%= oldInput.email %>">
+        </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input
+            class="<%= validationErrors.find(e => e.path === 'password' ) ? 'invalid' : '' %>"
+             type="password" name="password" id="password" value="<%= oldInput.password %>">
+        </div>
+        <input type="hidden" name="_csrf" value="<%=csrfToken%>">
+        <button class="btn" type="submit">Login</button>
+    </form>
+    <a href="/signup" class="btn" style="position: relative; left: 47%; ">Sign up here</a>
+    <div class="centered" style="padding: 1em 0;">
+        <a href="/reset" class="btn">Reset Password</a>
+    </div>
+</body>
