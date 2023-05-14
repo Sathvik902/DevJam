@@ -21,7 +21,7 @@ const About = () => {
         sapien. Sed eget bibendum ex, nec varius lorem. Fusce euismod fermentum
         purus ac ultrices. Sed id turpis neque. Nunc laoreet, velit quis
         vulputate dignissim, purus enim pellentesque mi, eu sollicitudin justo
-        nisl at dolor. Nam quis arcu auctor, rhoncus orci vel, imperdiet arcu.{" "}
+        nisl at dolor. Nam quis arcu auctor, rhoncus orci vel, imperdiet arcu
       </p>
     </div>
   );
