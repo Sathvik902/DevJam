@@ -1,0 +1,60 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 50px 20px;
+}
+
+.contact,
+.address {
+  flex-basis: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact h3,
+.address h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.contact p,
+.address p {
+  margin-bottom: 10px;
+}
+
+.contact p:last-child,
+.address p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 50px;
+  }
+
+  .contact,
+  .address {
+    flex-basis: 50%;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact,
+  .address {
+    flex-basis: auto;
+    text-align: center;
+  }
+}
+
+.copyRight {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #999;
+}

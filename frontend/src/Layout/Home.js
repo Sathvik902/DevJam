@@ -1,7 +1,14 @@
 import React from "react";
+import Navbar from "../Shared/Navbar";
+import Footer from "../Shared/Footer";
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Navbar />
+      <Footer />
+    </div>
+  );
 }
 
 export default Home;
