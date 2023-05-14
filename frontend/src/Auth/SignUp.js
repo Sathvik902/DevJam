@@ -10,7 +10,7 @@ const SignUp = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Form submitted");
+    console.log("Form submitted"); 
   };
 
   return (

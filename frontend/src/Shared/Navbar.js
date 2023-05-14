@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { FaBolt } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,23 +19,23 @@ function Navbar() {
       </div>
       <ul className={`${styles.menu} ${isOpen ? styles.showMenu : ""}`}>
         <li>
-          <a href="/">Home</a>
+          <NavLink href="/">Home</NavLink>
         </li>
         <li>
-          <a href="#">About</a>
+          <NavLink href="about">About</NavLink>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <NavLink href="contact">Contact</NavLink>
         </li>
         <li>
-          <a href="#">Login/Signup</a>
+          <NavLink href="/login">Login/Signup</NavLink>
         </li>
-        <li>
+        {/* <li>
           <form className={styles.searchForm}>
             <input type="text" placeholder="Search" />
             <button type="submit">Search</button>
           </form>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

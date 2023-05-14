@@ -7,14 +7,12 @@ function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-  };
+  }; 
 
   return (
     <div className={styles.container}>
       <form onSubmit={handleLogin} className={styles.form}>
-        <h2 id="heading" className={styles.heading}>
-          Login
-        </h2>
+      <h2 id={styles.headin}>Login</h2>
         <label className={styles.label}>
           Username: &emsp;
           <input
